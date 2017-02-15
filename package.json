@@ -1,0 +1,30 @@
+{
+  "name": "07-node-npm",
+  "version": "1.0.0",
+  "description": "class 07 lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleex1004/07-node-npm.git"
+  },
+  "keywords": [
+    "codefellows",
+    "christina",
+    "luis",
+    "allie",
+    "class07",
+    "node"
+  ],
+  "author": "Christina Luis Allie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cleex1004/07-node-npm/issues"
+  },
+  "homepage": "https://github.com/cleex1004/07-node-npm#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
