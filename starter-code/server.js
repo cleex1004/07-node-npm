@@ -10,15 +10,23 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // DONE: Include all of the static resources as an argument to app.use()
-app.use(express.static('public'));
+app.use(express.static('./public'));
+
+app.get('/new', function (request, response) {
+  console.log('new');
+  response.sendFile('public/new.html', {root: '.'});
+})
 
 app.get('*', function (request, response) {
-  response.sendFile('public/index.html', { root: '.' });
+  response.sendFile('public/index.html', {root: '.' });
   // DONE: Using the response object, send the index.html file back to the user
 });
 
-// TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+// DONE: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+
+
 
 app.listen(PORT, function () {
-  // TODO: Log to the console a message that lets you know which port your server has started on
+  console.log('You are on localhost:3000');
+  // DONE: Log to the console a message that lets you know which port your server has started on
 });
